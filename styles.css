@@ -31,11 +31,10 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: var(--bg-color);
     background-image: url('./assets/personal-trainer-bg.png');
     background-repeat: no-repeat;
-    background-size: 1000px;
-    background-position: 100%;
+    background-size: cover;
+    background-position: center;
     box-shadow: inset 0px -90px 35px -38px var(--bg-color);
 }
 
