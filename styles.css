@@ -89,11 +89,6 @@ section {
 
 .who-for {
     background: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: auto;
 }
 
 .who-for .who-for-row {
@@ -164,7 +159,7 @@ hr {
 
 .who-for-column:nth-child(1) {
     width: 200px;
-    height: auto;
+    height: 412px;
     background-image: url('./assets/people-working-out-indoors-together-with-dumbbells.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -189,7 +184,7 @@ hr {
 
 .who-for-column-item:nth-child(1) {
     border-left: 6px solid var(--primary-light);
-    border-right: 6px solid var(--primary-light);
+    border-right: 8px solid var(--bg-color);
 }
 
 .who-for-column-item:nth-child(2) {
@@ -201,7 +196,7 @@ hr {
     position: absolute;
     width: 32px;
     height: 70px;
-    left: -14px;
+    left: -16px;
     top: -20px;
     background: var(--bg-color);
     transform: rotate(40deg);
@@ -229,5 +224,17 @@ hr {
 @media (max-width: 520px) {
     html {
         font-size: 50%;
+    }
+
+    .default-button {
+        opacity: 1;
+    }
+
+    .default-button a {
+        font-size: 1.8rem;
+    }
+
+    .who-for-column .who-for-box h2 {
+        font-size: 2.5rem;
     }
 }
