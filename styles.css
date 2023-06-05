@@ -80,6 +80,11 @@ section {
     color: var(--white);
 }
 
+.btn-box {
+    position: relative;
+    width: 100%;
+}
+
 /* para quem é o atendimento */
 
 .who-for {
@@ -134,7 +139,7 @@ section {
     background: var(--primary);
     position: relative;
     cursor: pointer;
-    padding: 2rem .5rem 2rem;
+    padding: 2rem 4rem 2rem;
     border-radius: 1rem;
     opacity: .8;
 }
@@ -155,4 +160,74 @@ hr {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, transparent, var(--primary-light), transparent);  
+}
+
+.who-for-column:nth-child(1) {
+    width: 200px;
+    height: auto;
+    background-image: url('./assets/people-working-out-indoors-together-with-dumbbells.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.who-for-column:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+}
+
+.who-for-column-item {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.who-for-column-item:nth-child(1) {
+    border-left: 6px solid var(--primary-light);
+    border-right: 6px solid var(--primary-light);
+}
+
+.who-for-column-item:nth-child(2) {
+    border-right: 6px solid var(--primary-light);
+}
+
+.who-for-column-item:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 70px;
+    left: -14px;
+    top: -20px;
+    background: var(--bg-color);
+    transform: rotate(40deg);
+}
+
+.who-for-column-item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 65px;
+    right: -15px;
+    bottom: -20px;
+    background: var(--bg-color);
+    transform: rotate(40deg);
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 50%;
+    }
 }
