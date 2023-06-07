@@ -132,7 +132,7 @@ section {
 }
 
 .default-button {
-    background: var(--primary);
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
     position: relative;
     cursor: pointer;
     padding: 2rem 4rem 2rem;
@@ -268,8 +268,10 @@ hr {
 .follow-up-column:nth-child(2) {
     height: 500px;
     position: relative;
-    border: 6px solid var(--primary-light);
-    
+    border-image: linear-gradient(to right, var(--primary), var(--primary-light));
+    border-width: 6px;
+    border-style: solid;
+    border-image-slice: 1;
 }
 
 .follow-up-column:nth-child(2) img {
@@ -304,6 +306,132 @@ hr {
     transform: rotate(270deg);
 }
 
+/* como funciona */
+
+.how-it-work {
+    background: var(--bg-color);
+    position: relative;
+}
+
+.how-it-work .how-it-work-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+.how-it-work .how-it-work-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.how-it-work .how-it-work-row h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.how-it-work-row .how-it-work-boxs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 70%;
+}
+
+.how-it-work-boxs .how-it-work-item {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(var(--second-bg-color), var(--primary));
+    border-image-slice: 1;
+}
+
+.how-it-work-boxs .how-it-work-item .content-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, var(--primary), rgba(0, 0, 0, .7));
+}
+
+.how-it-work-boxs .how-it-work-item .content-item h1 {
+    font-size: 7rem;
+}
+
+.how-it-work-boxs .how-it-work-item .content-item p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.how-it-work-boxs .how-it-work-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1px solid var(--bg-color);
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid var(--bg-color);
+    left: -9px;
+    top: -8px;
+    transform: rotate(90deg);
+    z-index: 1;
+}
+
+.how-it-work-boxs .how-it-work-item::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1px solid var(--bg-color);
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid var(--bg-color);
+    right: -9px;
+    bottom: -8px;
+    transform: rotate(270deg);
+}
+
+.how-it-work-boxs .how-it-work-item:nth-child(1) {
+    background-image: url('https://img.freepik.com/premium-photo/beautiful-young-fitness-woman-working-out-gym_130388-717.jpg?w=740');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.how-it-work-boxs .how-it-work-item:nth-child(2) {
+    background-image: url('https://img.freepik.com/free-photo/young-happy-sportswoman-getting-ready-workout-tying-shoelace-fitness-center_637285-470.jpg?w=740&t=st=1686158611~exp=1686159211~hmac=d24824212ff6a5e189353bbb600afb5d0b51cb55a9db00a88ab7ff28acf04914');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.how-it-work-boxs .how-it-work-item:nth-child(3) {
+    background-image: url('https://img.freepik.com/free-photo/young-man-sportswear-exercise-class-gym_1150-12372.jpg?w=740&t=st=1686158633~exp=1686159233~hmac=2f1234d0c753b5cc7724c8da9f5021ef89e5d1e2e10936b795b6463db63fdeb3');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.how-it-work-boxs .how-it-work-item:nth-child(4) {
+    background-image: url('https://img.freepik.com/free-photo/fit-couple-lifting-barbells-gym_329181-19979.jpg?w=740&t=st=1686159080~exp=1686159680~hmac=8495fe09807ef8b7c009c52e5a7ac22bbc2d7f2af7a518942f3755fc733bd1f4');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.how-it-work-boxs .how-it-work-item:nth-child(5) {
+    background-image: url('https://img.freepik.com/free-photo/bodybuilder-training-arm-with-resistance-band_7502-4758.jpg?w=740&t=st=1686158709~exp=1686159309~hmac=0518d13bf74858bc8a56c487322227d8c0b043cb051a6a3c795e198cff364a65');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* footer */
 
 .footer {
@@ -312,7 +440,7 @@ hr {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 
 .footer-text, .footer-icontop {
