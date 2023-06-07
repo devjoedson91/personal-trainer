@@ -314,11 +314,9 @@ hr {
     padding: 8rem 9% 14rem;
 }
 
-.how-it-work .how-it-work-btn {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
+.how-it-work .how-it-work-btn .btn-box {
+    display: flex;
+    justify-content: center;
 }
 
 .how-it-work .how-it-work-row {
@@ -368,7 +366,7 @@ hr {
 .how-it-work-boxs .how-it-work-item .content-item p {
     font-size: 1.5rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .how-it-work-boxs .how-it-work-item::after {
@@ -511,10 +509,6 @@ hr {
     .how-it-work-row {
         flex-direction: column;
         align-items: center;
-    }
-
-    .how-it-work .how-it-work-btn {
-        bottom: 1rem;
     }
 
     .footer {
