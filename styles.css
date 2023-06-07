@@ -311,6 +311,7 @@ hr {
 .how-it-work {
     background: var(--bg-color);
     position: relative;
+    padding: 8rem 9% 14rem;
 }
 
 .how-it-work .how-it-work-btn {
@@ -505,6 +506,15 @@ hr {
 
     .follow-up-column:nth-child(2) {
         height: 400px;
+    }
+
+    .how-it-work-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-it-work .how-it-work-btn {
+        bottom: 1rem;
     }
 
     .footer {
