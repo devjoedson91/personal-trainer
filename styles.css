@@ -26,7 +26,7 @@ html {
 section {
     color: var(--white);
     min-height: 100vh;
-    padding: 10rem 9% 8rem; /* top right-left bottom */
+    padding: 8rem 9% 8rem; /* top right-left bottom */
 }
 
 .home {
@@ -75,7 +75,7 @@ section {
 
 .home-content p {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0 4rem;
     color: var(--white);
     line-height: 2.5rem;
@@ -236,8 +236,8 @@ hr {
     border-left: 1px solid var(--bg-color);
     border-right: 50px solid transparent;
     border-bottom: 50px solid var(--bg-color);
-    right: -7px;
-    bottom: -7px;
+    right: -12px;
+    bottom: -9px;
     transform: rotate(270deg);
 }
 
@@ -285,8 +285,8 @@ hr {
     border-left: 1px solid var(--second-bg-color);
     border-right: 50px solid transparent;
     border-bottom: 50px solid var(--second-bg-color);
-    left: -7px;
-    top: -6px;
+    left: -8px;
+    top: -7px;
     transform: rotate(90deg);
     z-index: 1;
 }
@@ -300,7 +300,7 @@ hr {
     border-right: 50px solid transparent;
     border-bottom: 50px solid var(--second-bg-color);
     right: -7px;
-    bottom: -6px;
+    bottom: -7px;
     transform: rotate(270deg);
 }
 
@@ -367,7 +367,7 @@ hr {
         font-size: 1.8rem;
     }
 
-    .who-for-column .who-for-box h2 {
+    .who-for-column .who-for-box h2, .follow-up-box h2 {
         font-size: 2.5rem;
     }
 
